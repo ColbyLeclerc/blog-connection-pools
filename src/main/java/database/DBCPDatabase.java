@@ -16,11 +16,11 @@ public class DBCPDatabase {
 
             BasicDataSource ds = new BasicDataSource();
 
-            ds.setUrl("jdbc:sqlserver://localhost;databaseName=testdba");
-            ds.setUsername("testdb");
-            ds.setPassword("W91gLUJWfRS3sg37");
+            ds.setUrl("jdbc:mysql://localhost:3306/testdba");
+            ds.setUsername("root");
+            ds.setPassword("xdbG3RpZmjKinGDy183H");
 
-            ds.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
 
             ds.setInitialSize(3);
             ds.setMaxTotal(25);
